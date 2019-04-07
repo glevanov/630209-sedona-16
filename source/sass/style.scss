@@ -1,1 +1,15 @@
-body { background: red; }
+@import "normalize.min";
+@import "blocks/global";
+@import "blocks/variables";
+@import "blocks/fonts";
+@import "blocks/visually-hidden";
+@import "blocks/text";
+@import "blocks/reset-list";
+@import "blocks/reset-link";
+@import "blocks/page";
+@import "blocks/main-navigation";
+@import "blocks/main-footer";
+@import "blocks/advantages";
+@import "blocks/social";
+@import "blocks/likes";
+@import "blocks/promo";
