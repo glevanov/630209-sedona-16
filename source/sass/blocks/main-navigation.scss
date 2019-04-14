@@ -9,6 +9,11 @@
   flex-direction: column;
 
   background-color: $color-primary;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-navigation__item {
