@@ -4,11 +4,20 @@
   align-items: center;
 
   background-color: $color-bg-default;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .main-footer__tagline {
   font-size: 2.1rem;
   line-height: 2.6rem;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 10rem;
+  }
 }
 
 .main-footer__copyright {
@@ -17,6 +26,10 @@
 
   font-size: 1.4rem;
   line-height: 2.6rem;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 10rem;
+  }
 }
 
 .main-footer__logo {

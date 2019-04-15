@@ -1,0 +1,11 @@
+.photo-card {
+  &--fist {
+    @media (min-width: $width-tablet) {
+      width: 64.5rem;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    background-color: $color-bg-cards;
+  }
+}

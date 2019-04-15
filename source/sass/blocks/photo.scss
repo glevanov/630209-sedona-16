@@ -1,0 +1,15 @@
+.photo__feed {
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
+
+.photo__feed-item {
+  &--first {
+    @media (min-width: $width-tablet) {
+      width: 100%;
+    }
+  }
+}

@@ -2,9 +2,29 @@
   background-color: $color-bg-default;
 }
 
+.advantages__list {
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
+
 .advantages__item {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &--short {
+    @media (min-width: $width-tablet) {
+      width: calc(100% / 3);
+    }
+  }
 }
 
 .advantages__tagline {
@@ -21,6 +41,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (min-width: $width-tablet) {
+    width: calc(100% / 3);
+  }
 }
 
 .advantages__detail-tagline {
@@ -40,10 +64,19 @@
 
   &--contrast {
     background-color: $color-primary;
+
+    @media (min-width: $width-tablet) {
+      width: calc(100% - 51.2rem);
+      flex-grow: 1;
+    }
   }
 
   &--accent {
     background-color: $color-bg-accent;
+
+    @media (min-width: $width-tablet) {
+      width: 100%;
+    }
   }
 }
 
