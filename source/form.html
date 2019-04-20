@@ -38,7 +38,7 @@
       <h2 class="feedback__heading text text--uppercase text--bold">Оставьте свой отзыв</h2>
       <p class="feedback__text text text--uppercase text--color-accent">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="feedback__form">
-        <fieldset class="feedback__fieldset">
+        <fieldset class="feedback__fieldset feedback__fieldset--half-width">
           <legend class="feedback__legend text text--uppercase text--bold">Представьтесь:</legend>
           <label class="feedback__label feedback__label--name text text--uppercase text--color-accent">
             Имя*:
@@ -62,7 +62,7 @@
             <input type="email" class="feedback__input feedback__input--contact text text--bold" placeholder="Введите e-mail">
           </label>
         </fieldset>
-        <fieldset class="feedback__fieldset">
+        <fieldset class="feedback__fieldset feedback__fieldset--half-width feedback__fieldset--order-first">
           <legend class="feedback__legend text text--uppercase text--bold">ВАше Общее впечатление:</legend>
           <input class="visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
           <label class="feedback__label feedback__label--radio text text--bold" for="positive">Скорее положительное</label>
@@ -88,6 +88,7 @@
           <textarea class="feedback__textarea text text--bold" name="text-review" id="text-review" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback__submit text text--bold text--uppercase text--color-contrast">отправить отзыв</button>
+        <p class="feedback__required text text--uppercase text--color-accent">* — обязательные поля</p>
       </form>
     </section>
   </main>

@@ -5,29 +5,88 @@
 .feedback__form {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
 }
 
 .feedback__heading {
+  margin-left: 2rem;
+  margin-right: 2rem;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+
+    font-size: 3rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
 }
 
 .feedback__text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+
   font-size: 1.4rem;
   line-height: 2.4rem;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
 }
 
 .feedback__fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 2rem;
+  margin: 0;
   padding: 0;
 
   border: none;
   border-bottom: 0.1rem solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+  }
+
+  &--half-width {
+    @media (min-width: $width-tablet) {
+      width: 50%;
+    }
+  }
+
+  &--order-first {
+    @media (min-width: $width-tablet) {
+      order: -1;
+    }
+  }
 }
 
 .feedback__legend {
@@ -35,10 +94,13 @@
   line-height: 2.6rem;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $width-tablet) {
+    font-size: 2.1rem;
+  }
 }
 
 .feedback__label {
-
   width: 100%;
 
   font-size: 1.4rem;
@@ -98,12 +160,22 @@
 .feedback__submit {
   display: block;
   padding: 2.1rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
 
   font-size: 2.1rem;
   line-height: 2.6rem;
 
   background-color: $color-primary;
   border: none;
+}
+
+.feedback__required {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    margin-left: auto;
+
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
 }
