@@ -1,6 +1,6 @@
-@import "normalize.min";
+@import "scaffolding/normalize.min";
+@import "scaffolding/variables";
 @import "blocks/global";
-@import "blocks/variables";
 @import "blocks/fonts";
 @import "blocks/visually-hidden";
 @import "blocks/text";
@@ -19,3 +19,4 @@
 @import "blocks/contact";
 @import "blocks/wrapper";
 @import "blocks/video";
+@import "blocks/feedback";

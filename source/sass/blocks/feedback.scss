@@ -1,0 +1,43 @@
+.feedback {
+  background-color: $color-bg-default;
+}
+
+.feedback__heading {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.feedback__text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.feedback__legend {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.feedback__label {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+
+  &--radio,
+  &--checkbox {
+    font-size: 1.8rem;
+  }
+}
+
+.feedback__input {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.feedback__textarea {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.feedback__submit {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+}
