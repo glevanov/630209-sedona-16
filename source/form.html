@@ -34,6 +34,62 @@
     <section class="promo main__promo">
       <img src="img/text-sedona.svg" width="229" height="39" alt="Логотип и слоган Седона">
     </section>
+    <section class="feedback main__feedback">
+      <h2 class="feedback__heading">Оставьте свой отзыв</h2>
+      <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="feedback__form">
+        <fieldset class="feedback__fieldset">
+          <legend class="feedback__legend">Представьтесь:</legend>
+          <label class="feedback__label">
+            Имя*:
+            <input type="text" class="feedback__input"></label>
+          <label class="feedback__label">
+            Фамилия*:
+            <input type="text" class="feedback__input">
+          </label>
+          <label class="feedback__label">
+            Отчество:
+            <input type="text" class="feedback__input">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__fieldset">
+          <legend class="feedback__legend">Контактная информация:</legend>
+          <label class="feedback__label feedback__label--vertical">
+            Контактный телефон*:
+            <input type="tel" class="feedback__input" placeholder="Введите телефон"></label>
+          <label class="feedback__label feedback__label--vertical">
+            Электронная почта*:
+            <input type="email" class="feedback__input" placeholder="Введите e-mail">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__fieldset">
+          <legend class="feedback__legend">ВАше Общее впечатление:</legend>
+          <input class="visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
+          <label class="feedback__label feedback__label--radio" for="positive">Скорее положительное</label>
+          <input type="radio" class="visually-hidden" id="negative" name="impression" value="negative">
+          <label class="feedback__label feedback__label--radio" for="negative">Скорее отрицательное</label>
+          <input type="radio" class="visually-hidden" id="nondecisive" name="impression" value="nondecisive">
+          <label class="feedback__label feedback__label--radio" for="nondecisive">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="feedback__fieldset">
+          <legend class="feedback__legend">посещенные достопримечательности:</legend>
+          <input class="visually-hidden" type="checkbox" id="devils-bridge" name="sights" value="devils-bridge" checked>
+          <label class="feedback__label feedback__label--checkbox" for="devils-bridge">Затрудняюсь ответить</label>
+          <input class="visually-hidden" type="checkbox" id="bell-mountain" name="sights" value="bell-mountain" checked>
+          <label class="feedback__label feedback__label--checkbox" for="bell-mountain">Гора-Колокол</label>
+          <input class="visually-hidden" type="checkbox" id="slide-park" name="sights" value="slide-park" checked>
+          <label class="feedback__label feedback__label--checkbox" for="slide-park">Слайд-парк</label>
+          <input class="visually-hidden" type="checkbox" id="red-rock" name="sights" value="red-rock">
+          <label class="feedback__label feedback__label--checkbox" for="red-rock">Красные скалы</label>
+        </fieldset>
+        <fieldset class="feedback__fieldset">
+          <legend class="feedback__legend">Опишите свои эмоции:</legend>
+          <label for="text-review" class="visually-hidden">Текстовое поле для отзыва</label>
+          <textarea class="feedback__textarea" name="text-review" id="text-review" rows="5"></textarea>
+        </fieldset>
+        <button class="feedback__submit">отправить отзыв</button>
+      </form>
+    </section>
   </main>
   <footer class="main-footer page__main-footer">
     <p class="main-footer__tagline text text--uppercase text--bold">#visitSEDONA</p>

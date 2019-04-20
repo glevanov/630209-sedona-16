@@ -123,11 +123,9 @@
           <video class="player__video visually-hidden" src="presentation.mp4" loop></video>
         </div>
         <div class="player__controls">
-          <div class="player__seek">
-            <div class="player__scale">
-              <span class="player__pin"></span>
-            </div>
-          </div>
+          <label class="player__seek" aria-label="Полоса прокрутки">
+            <input class="player__scale" type="range">
+          </label>
           <button class="player__button player__button--rewind" type="button" aria-label="Перемотать назад"></button>
           <button class="player__button player__button--captions" type="button" aria-label="Субтитры"></button>
           <button class="player__button player__button--fullscreen" type="button" aria-label="На полный экран"></button>
