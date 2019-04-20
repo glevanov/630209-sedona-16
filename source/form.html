@@ -40,26 +40,26 @@
       <form class="feedback__form">
         <fieldset class="feedback__fieldset">
           <legend class="feedback__legend text text--uppercase text--bold">Представьтесь:</legend>
-          <label class="feedback__label text text--uppercase text--color-accent">
+          <label class="feedback__label feedback__label--name text text--uppercase text--color-accent">
             Имя*:
-            <input type="text" class="feedback__input text text--bold"></label>
-          <label class="feedback__label text text--uppercase text--color-accent">
+            <input type="text" class="feedback__input feedback__input--first-name text text--bold" placeholder="Петр"></label>
+          <label class="feedback__label feedback__label--name text text--uppercase text--color-accent">
             Фамилия*:
-            <input type="text" class="feedback__input text text--bold">
+            <input type="text" class="feedback__input feedback__input--other-name text text--bold" placeholder="Иванов">
           </label>
-          <label class="feedback__label text text--uppercase text--color-accent">
+          <label class="feedback__label feedback__label--name text text--uppercase text--color-accent">
             Отчество:
-            <input type="text" class="feedback__input text text--bold">
+            <input type="text" class="feedback__input feedback__input--other-name text text--bold" placeholder="Александрович">
           </label>
         </fieldset>
         <fieldset class="feedback__fieldset">
           <legend class="feedback__legend text text--uppercase text--bold">Контактная информация:</legend>
-          <label class="feedback__label feedback__label--vertical text--uppercase text--color-accent">
+          <label class="feedback__label feedback__label--contact text--uppercase text--color-accent">
             Контактный телефон*:
-            <input type="tel" class="feedback__input text text--bold" placeholder="Введите телефон"></label>
-          <label class="feedback__label feedback__label--vertical text--uppercase text--color-accent">
+            <input type="tel" class="feedback__input feedback__input--contact text text--bold" placeholder="Введите телефон"></label>
+          <label class="feedback__label feedback__label--contact text--uppercase text--color-accent">
             Электронная почта*:
-            <input type="email" class="feedback__input text text--bold" placeholder="Введите e-mail">
+            <input type="email" class="feedback__input feedback__input--contact text text--bold" placeholder="Введите e-mail">
           </label>
         </fieldset>
         <fieldset class="feedback__fieldset">
@@ -85,7 +85,7 @@
         <fieldset class="feedback__fieldset">
           <legend class="feedback__legend text text--uppercase text--bold">Опишите свои эмоции:</legend>
           <label for="text-review" class="visually-hidden">Текстовое поле для отзыва</label>
-          <textarea class="feedback__textarea text text--bold" name="text-review" id="text-review" rows="5"></textarea>
+          <textarea class="feedback__textarea text text--bold" name="text-review" id="text-review" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback__submit text text--bold text--uppercase text--color-contrast">отправить отзыв</button>
       </form>

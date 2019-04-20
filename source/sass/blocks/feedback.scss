@@ -2,22 +2,45 @@
   background-color: $color-bg-default;
 }
 
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .feedback__heading {
   font-size: 1.8rem;
   line-height: 2.6rem;
+  text-align: center;
 }
 
 .feedback__text {
   font-size: 1.4rem;
   line-height: 2.4rem;
+  text-align: center;
+}
+
+.feedback__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  padding: 0;
+
+  border: none;
+  border-bottom: 0.1rem solid $color-border;
 }
 
 .feedback__legend {
   font-size: 1.8rem;
   line-height: 2.6rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feedback__label {
+
+  width: 100%;
+
   font-size: 1.4rem;
   line-height: 2.6rem;
 
@@ -25,19 +48,62 @@
   &--checkbox {
     font-size: 1.8rem;
   }
+
+  &--name {
+    display: flex;
+  }
+
+  &--contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .feedback__input {
+  padding: 2.2rem;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
+
+  border: none;
+  background-color: $color-bg-cards;
+
+  &::placeholder {
+    color: $color-text-default;
+  }
+
+  &--first-name {
+    width: 23rem;
+    margin-left: auto;
+  }
+
+  &--other-name {
+    width: 19.4rem;
+    margin-left: auto;
+  }
 }
 
 .feedback__textarea {
+  width: 100%;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
+
+  border: none;
+  background-color: $color-bg-cards;
+
+  resize: none;
 }
 
 .feedback__submit {
+  display: block;
+  padding: 2.1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+
   font-size: 2.1rem;
   line-height: 2.6rem;
+
+  background-color: $color-primary;
+  border: none;
 }
