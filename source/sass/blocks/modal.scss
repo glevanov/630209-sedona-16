@@ -1,0 +1,31 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: $color-bg-default;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal__heading {
+  font-size: 3rem;
+  line-height: 2.6rem;
+  text-align: center;
+
+  &--error {
+    line-height: 4rem;
+  }
+}
+
+.modal__text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.modal__bottom {
+  padding: 2rem 0;
+
+  background-color: $color-bg-cards;
+}
