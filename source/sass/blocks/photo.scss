@@ -2,6 +2,38 @@
   background-color: $color-bg-default;
 }
 
+.photo__heading {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    width: 64.8rem;
+    margin: 0 auto;
+
+    font-size: 3rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
+  }
+}
+
+.photo__text {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    width: 64.8rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
+  }
+}
+
 .photo__feed {
   display: flex;
   flex-direction: column;
@@ -10,6 +42,12 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 64.8rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
   }
 }
 
