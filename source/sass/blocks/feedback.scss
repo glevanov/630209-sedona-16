@@ -1,0 +1,170 @@
+.feedback {
+  background-color: $color-bg-default;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+.feedback__heading {
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+
+    font-size: 3rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+.feedback__text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+.feedback__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-bottom: 0.1rem solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+  }
+
+  &--half-width {
+    @media (min-width: $width-tablet) {
+      width: 50%;
+    }
+  }
+
+  &--order-first {
+    @media (min-width: $width-tablet) {
+      order: -1;
+    }
+  }
+}
+
+.feedback__legend {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $width-tablet) {
+    font-size: 2.1rem;
+  }
+}
+
+.feedback__label {
+  width: 100%;
+
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+
+  &--radio,
+  &--checkbox {
+    font-size: 1.8rem;
+  }
+
+  &--name {
+    display: flex;
+  }
+
+  &--contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback__input {
+  padding: 2.2rem;
+
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+
+  border: none;
+  background-color: $color-bg-cards;
+
+  &::placeholder {
+    color: $color-text-default;
+  }
+
+  &--first-name {
+    width: 23rem;
+    margin-left: auto;
+  }
+
+  &--other-name {
+    width: 19.4rem;
+    margin-left: auto;
+  }
+}
+
+.feedback__textarea {
+  width: 100%;
+
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+
+  border: none;
+  background-color: $color-bg-cards;
+
+  resize: none;
+}
+
+.feedback__required {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    margin-left: auto;
+
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+}

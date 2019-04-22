@@ -7,6 +7,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
+    width: 76.8rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
   }
 }
 
@@ -22,7 +28,11 @@
 
   &--short {
     @media (min-width: $width-tablet) {
-      width: calc(100% / 3);
+      width: 25.6rem;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 40rem;
     }
   }
 }
@@ -30,11 +40,31 @@
 .advantages__tagline {
   font-size: 1.8rem;
   line-height: 2.6rem;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    width: 76.8rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
+  }
 }
 
 .advantages__text {
   font-size: 1.4rem;
   line-height: 2.6rem;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    width: 76.8rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
+  }
 }
 
 .advantages__detail {
@@ -43,7 +73,11 @@
   align-items: flex-start;
 
   @media (min-width: $width-tablet) {
-    width: calc(100% / 3);
+    width: 25.6rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 40rem;
   }
 }
 
@@ -58,25 +92,26 @@
 }
 
 .advantages__keynote {
+  display: block;
+
   text-align: center;
   font-size: 1.4rem;
   line-height: 2.1rem;
 
+  @media (min-width: $width-tablet) {
+    width: 25.6rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 40rem;
+  }
+
   &--contrast {
     background-color: $color-primary;
-
-    @media (min-width: $width-tablet) {
-      width: calc(100% - 51.2rem);
-      flex-grow: 1;
-    }
   }
 
   &--accent {
     background-color: $color-bg-accent;
-
-    @media (min-width: $width-tablet) {
-      width: 100%;
-    }
   }
 }
 

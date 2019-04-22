@@ -1,0 +1,35 @@
+.contact {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+
+  background-color: $color-bg-default;
+}
+
+.contact__tagline {
+  width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+
+  @media (min-width: $width-tablet) {
+    font-size: 3rem;
+  }
+}
+
+.contact__text {
+  width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.contact__button {
+  width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}

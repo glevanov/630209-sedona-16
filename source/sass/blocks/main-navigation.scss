@@ -1,19 +1,31 @@
 .main-navigation {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
   font-size: 1.8rem;
 
   background-color: $color-bg-default;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    flex-direction: unset;
+  }
 }
 
 .main-navigation__list {
   position: relative;
   display: flex;
   flex-direction: column;
+  order: 0;
 
   background-color: $color-primary;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
     justify-content: space-between;
+    order: unset;
 
     color: $color-text-default;
 
@@ -49,16 +61,43 @@
 }
 
 .main-navigation__logo {
+  order: 1;
+
   @media (min-width: $width-tablet) {
     position: absolute;
     top: 0;
     left: 50%;
+
+    order: unset;
 
     transform: translateX(-50%);
   }
 }
 
 .main-navigation__button {
+  position: absolute;
+  right: 1.8rem;
+  bottom: 1.8rem;
+  z-index: 500;
+
+  display: block;
+  width: 2.3rem;
+  height: 2.1rem;
+
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  background-size: 2.3rem 2.1rem;
+
+  &--close {
+    top: 1.7rem;
+
+    height: 2.2rem;
+
+    background-image: url("../img/icon-cross.svg");
+    background-size: 2.3rem 2.2rem;
+  }
+
   @media (min-width: $width-tablet) {
     display: none;
   }

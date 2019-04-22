@@ -1,0 +1,19 @@
+.button {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-text-contrast;
+  border: none;
+
+  background-color: $color-primary;
+}

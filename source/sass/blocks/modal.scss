@@ -1,0 +1,50 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 30rem;
+
+  background-color: $color-bg-default;
+  box-shadow: 0 0.7rem 1.5rem 0 rgba(0, 1, 1, 0.15);
+
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $width-tablet) {
+    width: 64rem;
+  }
+
+  &--error {
+    @media (min-width: $width-tablet) {
+      width: 40rem;
+    }
+  }
+}
+
+.modal__heading {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 3rem;
+  }
+
+  &--error {
+    @media (min-width: $width-tablet) {
+      line-height: 4rem;
+    }
+  }
+}
+
+.modal__text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.modal__bottom {
+  padding: 2rem 0;
+
+  background-color: $color-bg-cards;
+}

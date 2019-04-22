@@ -1,0 +1,34 @@
+.video {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+
+  background-color: $color-bg-default;
+}
+
+.video__tagline {
+  width: 23.6rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+
+  @media (min-width: $width-tablet) {
+    font-size: 3rem;
+  }
+}
+
+.video__text {
+  width: 23.6rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.video__player {
+  margin-left: auto;
+  margin-right: auto;
+}
