@@ -1,8 +1,28 @@
 .advantages {
+  padding-top: 4rem;
+
   background-color: $color-bg-default;
 }
 
 .advantages__list {
+  position: relative;
+
+  padding-top: 3.7rem;
+
+  background-color: $color-primary;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3.7rem;
+    background-image: url("../img/bg-triangle.svg");
+
+    content: "";
+  }
+
   @media (min-width: $width-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +58,11 @@
 }
 
 .advantages__tagline {
+  width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.8rem;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
@@ -53,6 +78,11 @@
 }
 
 .advantages__text {
+  width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.4rem;
+
   font-size: 1.4rem;
   line-height: 2.6rem;
   text-align: center;
@@ -93,6 +123,8 @@
 
 .advantages__keynote {
   display: block;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
 
   text-align: center;
   font-size: 1.4rem;
@@ -107,6 +139,9 @@
   }
 
   &--contrast {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
     background-color: $color-primary;
   }
 
@@ -117,4 +152,6 @@
 
 .advantages__number {
   display: block;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
 }

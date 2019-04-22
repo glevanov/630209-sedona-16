@@ -55,12 +55,14 @@
 
 .main-navigation__link {
   display: block;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0.7rem 0;
   width: 100%;
 }
 
 .main-navigation__logo {
+  margin-left: auto;
+  margin-right: auto;
+  height: 5.7rem;
   order: 1;
 
   @media (min-width: $width-tablet) {
