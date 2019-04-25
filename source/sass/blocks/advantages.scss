@@ -55,6 +55,23 @@
       width: 40rem;
     }
   }
+
+  &--separator {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 14rem);
+
+      width: 28rem;
+      height: 0.1rem;
+
+      background-color: #d7d7d7;
+
+      content: "";
+    }
+  }
 }
 
 .advantages__tagline {
@@ -101,6 +118,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0;
+
+  background-color: $color-bg-default;
+
+  &:last-of-type {
+    padding-bottom: 4.2rem;
+  }
 
   @media (min-width: $width-tablet) {
     width: 25.6rem;
@@ -112,11 +136,20 @@
 }
 
 .advantages__detail-tagline {
+  width: 21rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 7rem;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
 }
 
 .advantages__detail-text {
+  width: 21rem;
+  margin-left: 7rem;
+  margin-bottom: -0.7rem;
+
   font-size: 1.4rem;
   line-height: 2.1rem;
 }
@@ -146,6 +179,10 @@
   }
 
   &--accent {
+    position: relative;
+
+    padding: 2.7rem 3.6rem 2.8rem;
+
     background-color: $color-bg-accent;
   }
 }

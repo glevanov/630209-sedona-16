@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 3.7rem;
 
   background-color: $color-bg-default;
 
@@ -14,15 +15,21 @@
 .main-footer__tagline {
   font-size: 2.1rem;
   line-height: 2.6rem;
+  margin-bottom: 3.5rem;
 
   @media (min-width: $width-tablet) {
     margin-right: 10rem;
   }
 }
 
+.main-footer__social {
+  margin-bottom: 4rem;
+}
+
 .main-footer__copyright {
   display: flex;
-  align-items: center;
+  align-items: normal;
+  margin-bottom: 2.3rem;
 
   font-size: 1.4rem;
   line-height: 2.6rem;
@@ -34,4 +41,6 @@
 
 .main-footer__logo {
   margin-left: 1.2rem;
+
+  line-height: 0;
 }
