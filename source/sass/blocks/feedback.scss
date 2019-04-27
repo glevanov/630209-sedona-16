@@ -124,16 +124,6 @@
 .feedback__input {
   padding: 2.2rem;
 
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-
-  border: none;
-  background-color: $color-bg-cards;
-
-  &::placeholder {
-    color: $color-text-default;
-  }
-
   &--first-name {
     width: 23rem;
     margin-left: auto;
@@ -148,13 +138,35 @@
 .feedback__textarea {
   width: 100%;
 
+  resize: none;
+}
+
+.feedback__input,
+.feedback__textarea {
+  box-sizing: border-box;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
+  color: $color-text-default;
 
-  border: none;
+  border: 0.4rem solid $color-bg-cards;
   background-color: $color-bg-cards;
 
-  resize: none;
+  &:hover {
+    background-color: $color-disabled;
+    border-color: $color-disabled;
+  }
+
+  &:focus {
+    background-color: $color-bg-default;
+    border-color: $color-disabled;
+  }
+
+  &::placeholder {
+    color: $color-text-default;
+
+    opacity: 1;
+  }
 }
 
 .feedback__required {

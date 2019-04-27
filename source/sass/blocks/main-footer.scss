@@ -43,4 +43,16 @@
   margin-left: 1.2rem;
 
   line-height: 0;
+  color: $color-text-default;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $color-text-default;
+
+    opacity: 0.3;
+  }
 }

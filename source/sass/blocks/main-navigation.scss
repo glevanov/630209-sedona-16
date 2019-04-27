@@ -20,6 +20,8 @@
   flex-direction: column;
   order: 0;
 
+  color: $color-text-contrast;
+
   background-color: $color-primary;
 
   @media (min-width: $width-tablet) {
@@ -57,6 +59,16 @@
   display: block;
   padding: 0.7rem 0;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-primary-down;
+  }
 }
 
 .main-navigation__logo {
