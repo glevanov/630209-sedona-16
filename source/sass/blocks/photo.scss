@@ -1,15 +1,19 @@
 .photo {
+  padding-top: 3.8rem;
+
   background-color: $color-bg-default;
 }
 
 .photo__heading {
+  width: 27rem;
+  margin: 0 auto 2.5rem;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
 
   @media (min-width: $width-tablet) {
     width: 64.8rem;
-    margin: 0 auto;
 
     font-size: 3rem;
   }
@@ -20,13 +24,15 @@
 }
 
 .photo__text {
+  width: 27rem;
+  margin: 0 auto 2.2rem;
+
   font-size: 1.4rem;
   line-height: 2.6rem;
   text-align: center;
 
   @media (min-width: $width-tablet) {
     width: 64.8rem;
-    margin: 0 auto;
   }
 
   @media (min-width: $width-desktop) {

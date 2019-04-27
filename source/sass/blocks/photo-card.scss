@@ -1,4 +1,9 @@
 .photo-card {
+  position: relative;
+
+  padding-top: 2.3rem;
+  padding-bottom: 1.8rem;
+
   &--fist {
     @media (min-width: $width-tablet) {
       width: 64.5rem;
@@ -8,4 +13,44 @@
   @media (min-width: $width-tablet) {
     background-color: $color-bg-cards;
   }
+
+  @media (max-width: $width-tablet) {
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 100vw;
+      height: 0.1rem;
+
+      background-color: $color-border-cards;
+
+      content: "";
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      top: unset;
+      bottom: -0.1rem;
+    }
+  }
+}
+
+.photo-card__heading {
+  margin-top: 1rem;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.photo-card__text {
+  margin-top: 0.2rem;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.photo-card__likes {
+  margin-top: 0.6rem;
 }

@@ -1,15 +1,20 @@
 .promo {
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 21.5rem;
+  box-sizing: border-box;
+  min-height: 15.8rem;
+  padding-top: 5rem;
 
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center bottom;
+
 
   &--index {
+    padding-top: 9rem;
     min-height: 38.9rem;
+
+    background-position: center;
+    background-size: cover;
   }
 }
