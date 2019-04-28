@@ -115,7 +115,7 @@
       <article class="player video__player">
         <h3 class="visually-hidden">Видеоплеер</h3>
         <div class="player__video-wrap">
-          <picture class="player__placeholder">
+          <picture class="player__placeholder reset-picture">
             <source srcset="img/video-desktop@1x.jpg" type="image/jpg" media="(min-width: 1200px)">
             <source srcset="img/video-tablet@1x.jpg" type="image/jpg" media="(min-width: 768px)">
             <img src="img/video-mobile@1x.jpg" alt="Обложка видео">
@@ -124,9 +124,11 @@
         </div>
         <div class="player__controls">
           <label class="player__seek" aria-label="Полоса прокрутки">
-            <input class="player__scale" type="range">
+            <input class="player__scale" type="range" value="16">
           </label>
-          <button class="player__button player__button--rewind" type="button" aria-label="Перемотать назад"></button>
+          <div class="player__button-wrap">
+            <button class="player__button player__button--rewind" type="button" aria-label="Перемотать назад"></button>
+          </div>
           <button class="player__button player__button--captions" type="button" aria-label="Субтитры"></button>
           <button class="player__button player__button--fullscreen" type="button" aria-label="На полный экран"></button>
         </div>
