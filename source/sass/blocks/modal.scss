@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
 
-  width: 30rem;
+  width: 32rem;
 
   background-color: $color-bg-default;
   box-shadow: 0 0.7rem 1.5rem 0 rgba(0, 1, 1, 0.15);
@@ -22,6 +22,9 @@
 }
 
 .modal__heading {
+  margin: 4.4rem auto 2.5rem;
+  width: 22rem;
+
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
@@ -38,13 +41,35 @@
 }
 
 .modal__text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.4rem;
+  width: 22rem;
+
   font-size: 1.4rem;
   line-height: 2.4rem;
   text-align: center;
+
+  &--error {
+    margin-bottom: 2rem;
+  }
 }
 
 .modal__bottom {
   padding: 2rem 0;
 
   background-color: $color-bg-cards;
+}
+
+.modal__submit {
+  width: 28rem;
+
+  &--smaller {
+    font-size: 1.8rem;
+  }
+
+  &--error {
+    width: 18rem;
+    margin-bottom: 3.5rem;
+  }
 }
