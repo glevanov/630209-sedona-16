@@ -67,8 +67,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  margin-bottom: 0.7rem;
+  margin: 0 0 0.7rem;
   padding: 0;
 
   border: none;
@@ -91,6 +90,8 @@
 }
 
 .feedback__legend {
+  position: relative;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2.1rem;
@@ -99,6 +100,22 @@
   font-size: 1.8rem;
   line-height: 2.6rem;
   text-align: center;
+
+  @media (max-width: $width-tablet) {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 100vw;
+      height: 0.1rem;
+
+      background-color: $color-border-cards;
+
+      content: "";
+      transform: translateX(-50%);
+    }
+  }
 
   @media (min-width: $width-tablet) {
     font-size: 2.1rem;
@@ -284,6 +301,7 @@
 }
 
 .feedback__textarea {
+  padding: 1rem 1.6rem;
   width: 100%;
 
   resize: none;
@@ -327,4 +345,10 @@
     font-size: 1.4rem;
     line-height: 2.6rem;
   }
+}
+
+.feedback__submit {
+  margin-top: 4.3rem;
+  margin-bottom: 3.8rem;
+  width: 100%;
 }
