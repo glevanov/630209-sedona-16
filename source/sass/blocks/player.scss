@@ -104,6 +104,8 @@
   height: 6.6rem;
   padding: 0;
 
+  color: $color-button-default;
+
   background-color: $color-bg-cards;
   background-repeat: no-repeat;
   background-position: center;
@@ -111,22 +113,36 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: $color-button-active;
+
+    @media (min-width: $width-tablet) {
+      color: $color-button-desktop-hover;
+    }
+  }
+
+  &:active {
+    color: $color-button-active;
+    @media (min-width: $width-tablet) {
+      color: $color-button-desktop-active;
+    }
+  }
+
   &--rewind {
     width: 6.6rem;
-
-    background-image: url("../../img/icon-video-replay.svg");
   }
 
   &--captions {
     width: 5.2rem;
-
-    background-image: url("../../img/icon-video-subtitles.svg");
   }
 
   &--fullscreen {
     width: 6.3rem;
+  }
 
-    background-image: url("../../img/icon-video-fullscreen.svg");
+  @media (min-width: $width-tablet) {
+    color: $color-button-desktop-default;
   }
 }
 
