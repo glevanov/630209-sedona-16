@@ -54,32 +54,33 @@
         </fieldset>
         <fieldset class="feedback__fieldset">
           <legend class="feedback__legend text text--uppercase text--bold">Контактная информация:</legend>
-          <label class="feedback__label feedback__label--contact text--uppercase text--color-accent">
-            Контактный телефон*:
-            <input type="tel" class="feedback__input feedback__input--contact text text--bold" placeholder="Введите телефон"></label>
-          <label class="feedback__label feedback__label--contact text--uppercase text--color-accent">
-            Электронная почта*:
-            <input type="email" class="feedback__input feedback__input--contact text text--bold" placeholder="Введите e-mail">
-          </label>
+          <p class="feedback__input-group feedback__input-group--tel">
+            <label class="feedback__label feedback__label--contact text--uppercase text--color-accent" for="tel">Контактный телефон*:</label>
+            <input class="feedback__input feedback__input--contact text text--bold" placeholder="Введите телефон" type="tel" id="tel">
+          </p>
+          <p class="feedback__input-group feedback__input-group--email">
+            <label class="feedback__label feedback__label--contact text--uppercase text--color-accent" for="email">Электронная почта*:</label>
+            <input class="feedback__input feedback__input--contact text text--bold" placeholder="Введите e-mail" type="email" id="email">
+          </p>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--half-width feedback__fieldset--order-first">
           <legend class="feedback__legend text text--uppercase text--bold">ВАше Общее впечатление:</legend>
-          <input class="visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
+          <input class="visually-hidden feedback__radio" type="radio" id="positive" name="impression" value="positive" checked>
           <label class="feedback__label feedback__label--radio text text--bold" for="positive">Скорее положительное</label>
-          <input type="radio" class="visually-hidden" id="negative" name="impression" value="negative">
+          <input class="visually-hidden feedback__radio" id="negative" name="impression" value="negative" type="radio">
           <label class="feedback__label feedback__label--radio text text--bold" for="negative">Скорее отрицательное</label>
-          <input type="radio" class="visually-hidden" id="nondecisive" name="impression" value="nondecisive">
+          <input class="visually-hidden feedback__radio" id="nondecisive" name="impression" value="nondecisive" type="radio">
           <label class="feedback__label feedback__label--radio text text--bold" for="nondecisive">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="feedback__fieldset">
           <legend class="feedback__legend text text--uppercase text--bold">посещенные достопримечательности:</legend>
-          <input class="visually-hidden" type="checkbox" id="devils-bridge" name="sights" value="devils-bridge" checked>
+          <input class="visually-hidden feedback__checkbox" type="checkbox" id="devils-bridge" name="sights" value="devils-bridge" checked>
           <label class="feedback__label feedback__label--checkbox text text--bold" for="devils-bridge">Мост Дьявола</label>
-          <input class="visually-hidden" type="checkbox" id="bell-mountain" name="sights" value="bell-mountain" checked>
+          <input class="visually-hidden feedback__checkbox" type="checkbox" id="bell-mountain" name="sights" value="bell-mountain" checked>
           <label class="feedback__label feedback__label--checkbox text text--bold" for="bell-mountain">Гора-Колокол</label>
-          <input class="visually-hidden" type="checkbox" id="slide-park" name="sights" value="slide-park" checked>
+          <input class="visually-hidden feedback__checkbox" type="checkbox" id="slide-park" name="sights" value="slide-park" checked>
           <label class="feedback__label feedback__label--checkbox text text--bold" for="slide-park">Слайд-парк</label>
-          <input class="visually-hidden" type="checkbox" id="red-rock" name="sights" value="red-rock">
+          <input class="visually-hidden feedback__checkbox" type="checkbox" id="red-rock" name="sights" value="red-rock">
           <label class="feedback__label feedback__label--checkbox text text--bold" for="red-rock">Красные скалы</label>
         </fieldset>
         <fieldset class="feedback__fieldset">
