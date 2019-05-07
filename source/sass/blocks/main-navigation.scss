@@ -11,6 +11,8 @@
   @media (min-width: $width-tablet) {
     display: block;
     flex-direction: unset;
+
+    font-size: 1.4rem;
   }
 }
 
@@ -25,8 +27,10 @@
   background-color: $color-primary;
 
   @media (min-width: $width-tablet) {
+    width: 76.8rem;
+    margin-right: auto;
+    margin-left: auto;
     flex-direction: row;
-    justify-content: space-between;
     order: unset;
 
     color: $color-text-default;
@@ -42,16 +46,22 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
-  @media (min-width: $width-tablet) {
-    border: none;
-  }
-
   &:first-of-type {
     border-top: none;
   }
 
   &:last-of-type {
     border-bottom: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    line-height: 2.6rem;
+
+    border: none;
+
+    &:nth-child(2) {
+      margin-right: 15.6rem;
+    }
   }
 }
 
@@ -63,11 +73,49 @@
   &:hover,
   &:focus {
     background-color: $color-primary-hover;
+
+    @media (min-width: $width-tablet) {
+      background-color: unset;
+    }
+  }
+
+  &:hover {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-hover;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-focus;
+    }
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
     background-color: $color-primary-down;
+    color: rgba(255, 255, 255, 0.3);
+
+    @media (min-width: $width-tablet) {
+      background-color: unset;
+      color: $color-nav-active;
+    }
+  }
+
+  &:active:focus {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-focus-active;
+    }
+  }
+
+  &:hover:focus {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-focus-hover;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 15.3rem;
+    padding: 1.5rem 0;
   }
 }
 
@@ -80,11 +128,9 @@
   @media (min-width: $width-tablet) {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 33.3rem;
 
     order: unset;
-
-    transform: translateX(-50%);
   }
 }
 
