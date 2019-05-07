@@ -128,8 +128,9 @@
   @media (min-width: $width-tablet) {
     position: absolute;
     top: 0;
-    left: 33.3rem;
+    left: calc(50% - 10.2rem / 2);
 
+    height: unset;
     order: unset;
   }
 }
