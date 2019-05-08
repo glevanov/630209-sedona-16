@@ -14,7 +14,27 @@
     padding-top: 9rem;
     min-height: 38.9rem;
 
-    background-position: center;
     background-size: cover;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 7.7rem;
+      min-height: 51.8rem;
+
+      background-size: 100%, cover;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+.promo__image {
+  width: 28.1rem;
+  height: 21.4rem;
+
+  @media (min-width: $width-tablet) {
+    width: 46rem;
+    height: 35rem;
   }
 }
