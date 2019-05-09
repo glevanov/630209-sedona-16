@@ -9,22 +9,24 @@
 }
 
 .advantages__list {
-  position: relative;
-
-  padding-top: 3.7rem;
-
   background-color: $color-primary;
 
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
+  @media (max-width: calc($width-tablet - 0.1rem)) {
+    position: relative;
 
-    width: 100%;
-    height: 3.7rem;
-    background-image: url("../img/bg-triangle.svg");
+    padding-top: 3.7rem;
 
-    content: "";
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 3.7rem;
+      background-image: url("../img/bg-triangle.svg");
+
+      content: "";
+    }
   }
 
   @media (min-width: $width-tablet) {
@@ -79,6 +81,7 @@
 }
 
 .advantages__tagline {
+  display: block;
   width: 26rem;
   margin-left: auto;
   margin-right: auto;
@@ -89,14 +92,27 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
-    width: 49rem;
-    margin: 0 auto 2.9rem;
+    width: 14.96rem;
+    margin-bottom: 0;
 
     font-size: 2.1rem;
   }
 
   @media (min-width: $width-desktop) {
     width: 120rem;
+  }
+
+  &--main {
+    @media (min-width: $width-tablet) {
+      width: 49rem;
+      margin: 0 auto 2.9rem;
+
+      font-size: 2.1rem;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 120rem;
+    }
   }
 }
 
@@ -112,7 +128,7 @@
 
   @media (min-width: $width-tablet) {
     width: 49rem;
-    margin: 0 auto;
+    margin: 0 auto 4.9rem;
   }
 
   @media (min-width: $width-desktop) {
@@ -128,16 +144,24 @@
 
   background-color: $color-bg-default;
 
-  &:last-of-type {
-    padding-bottom: 4.2rem;
-  }
-
   @media (min-width: $width-tablet) {
     width: 25.6rem;
+    align-items: center;
+    padding-bottom: 6.2rem;
+
+    text-align: center;
   }
 
   @media (min-width: $width-desktop) {
     width: 40rem;
+  }
+
+  &:last-of-type {
+    padding-bottom: 4.2rem;
+
+    @media (min-width: $width-tablet) {
+      padding-bottom: 6.2rem;
+    }
   }
 }
 
@@ -151,6 +175,13 @@
 
   font-size: 1.8rem;
   line-height: 2.6rem;
+
+  @media (min-width: $width-tablet) {
+    margin: 16rem 0 2rem;
+    width: 16.5rem;
+
+    font-size: 2.1rem;
+  }
 
   &--house::before {
     position: absolute;
@@ -167,6 +198,16 @@
     background-position: center;
 
     content: "";
+
+    @media (min-width: $width-tablet) {
+      top: -10rem;
+      left: 4.5rem;
+
+      width: 7.5rem;
+      height: 7.2rem;
+
+      background-size: 7.5rem 7.2rem;
+    }
   }
 
   &--gift::before {
@@ -184,6 +225,16 @@
     background-position: center;
 
     content: "";
+
+    @media (min-width: $width-tablet) {
+      top: -10.3rem;
+      left: 5rem;
+
+      width: 6.4rem;
+      height: 7.5rem;
+
+      background-size: 6.4rem 7.5rem;
+    }
   }
 
   &--burger::before {
@@ -201,6 +252,16 @@
     background-position: center;
 
     content: "";
+
+    @media (min-width: $width-tablet) {
+      top: -9.7rem;
+      left: 4.3rem;
+
+      width: 7.7rem;
+      height: 6.8rem;
+
+      background-size: 7.7rem 6.8rem;
+    }
   }
 }
 
@@ -211,6 +272,11 @@
 
   font-size: 1.4rem;
   line-height: 2.1rem;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    width: 16.5rem;
+  }
 }
 
 .advantages__keynote {
@@ -224,6 +290,9 @@
 
   @media (min-width: $width-tablet) {
     width: 25.6rem;
+    box-sizing: border-box;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   @media (min-width: $width-desktop) {
@@ -235,6 +304,10 @@
     padding-bottom: 4rem;
 
     background-color: $color-primary;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 4.5rem;
+    }
   }
 
   &--accent {
@@ -243,6 +316,17 @@
     padding: 2.7rem 3.6rem 2.8rem;
 
     background-color: $color-bg-accent;
+
+    @media (min-width: $width-tablet) {
+      padding: 4.5rem 4rem 4.3rem;
+    }
+  }
+
+  &--thin {
+    @media (min-width: $width-tablet) {
+      padding-left: 5.35rem;
+      padding-right: 5.35rem;
+    }
   }
 }
 
@@ -250,4 +334,8 @@
   display: block;
   margin-top: 1rem;
   margin-bottom: 1.3rem;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 2.1rem;
+  }
 }

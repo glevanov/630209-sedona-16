@@ -124,6 +124,7 @@
 
   &:active {
     color: $color-button-active;
+
     @media (min-width: $width-tablet) {
       color: $color-button-desktop-active;
     }
