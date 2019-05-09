@@ -1,5 +1,5 @@
 .tablet-reorder {
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-tablet) and (max-width: 1199px) {
     order: 0;
 
     &--1 {
