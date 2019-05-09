@@ -19,6 +19,12 @@
     }
   }
 
+  &--accent {
+    @media (min-width: $width-tablet) {
+      background-color: $color-bg-cards-accent;
+    }
+  }
+
   @media (max-width: 767px) {
     &::before,
     &::after {
