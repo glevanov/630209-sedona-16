@@ -2,6 +2,10 @@
   padding-top: 3.8rem;
 
   background-color: $color-bg-default;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 7.6rem;
+  }
 }
 
 .photo__heading {
@@ -14,6 +18,7 @@
 
   @media (min-width: $width-tablet) {
     width: 64.8rem;
+    margin-bottom: 2.9rem;
 
     font-size: 3rem;
   }
@@ -40,6 +45,13 @@
   }
 }
 
+.photo__text-break {
+  @media (min-width: $width-tablet) {
+    display: block;
+    margin-top: -0.3rem;
+  }
+}
+
 .photo__feed {
   display: flex;
   flex-direction: column;
@@ -50,6 +62,7 @@
     flex-wrap: wrap;
     width: 64.8rem;
     margin: 0 auto;
+    padding-top: 4.6rem;
   }
 
   @media (min-width: $width-desktop) {
@@ -58,6 +71,10 @@
 }
 
 .photo__feed-item {
+  @media (min-width: $width-tablet) {
+    width: 32.4rem;
+  }
+
   &--first {
     @media (min-width: $width-tablet) {
       width: 100%;

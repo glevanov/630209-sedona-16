@@ -2,19 +2,24 @@
   position: relative;
 
   padding-top: 2.3rem;
-  padding-bottom: 1.8rem;
-
-  &--fist {
-    @media (min-width: $width-tablet) {
-      width: 64.5rem;
-    }
-  }
+  padding-bottom: 1.7rem;
 
   @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 1.7rem;
+
     background-color: $color-bg-cards;
   }
 
-  @media (max-width: $width-tablet) {
+  &--first {
+    @media (min-width: $width-tablet) {
+      width: 64.8rem;
+    }
+  }
+
+  @media (max-width: 767px) {
     &::before,
     &::after {
       position: absolute;
@@ -38,19 +43,52 @@
 }
 
 .photo-card__heading {
-  margin-top: 1rem;
-
   font-size: 1.4rem;
   line-height: 2.4rem;
 }
 
-.photo-card__text {
-  margin-top: 0.2rem;
+.photo-card__link {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
 
+  line-height: 0;
+
+  @media (min-width: $width-tablet) {
+    max-width: 32.4rem;
+  }
+
+  &--first {
+    @media (min-width: $width-tablet) {
+      max-width: 64.8rem;
+    }
+  }
+}
+
+.photo-card__text-wrap {
+  display: block;
+
+  @media (min-width: $width-tablet) {
+    width: 19.9rem;
+    margin-left: 2rem;
+  }
+
+  &--first {
+    @media (min-width: $width-tablet) {
+      width: 52.4rem;
+    }
+  }
+}
+
+.photo-card__text {
   font-size: 1.4rem;
   line-height: 2.4rem;
 }
 
 .photo-card__likes {
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
+
+  @media (min-width: $width-tablet) {
+    margin: 1.3rem 2rem 0 auto;
+  }
 }

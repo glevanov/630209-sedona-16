@@ -2,6 +2,10 @@
   display: flex;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $width-tablet) {
+    width: 6.4rem;
+  }
 }
 
 .likes__like {
@@ -20,4 +24,8 @@
 
   font-size: 1.4rem;
   line-height: 2.4rem;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 1rem;
+  }
 }
