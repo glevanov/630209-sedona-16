@@ -9,6 +9,7 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 3.5rem;
   }
 }
 
@@ -18,12 +19,18 @@
   margin-bottom: 3.5rem;
 
   @media (min-width: $width-tablet) {
-    margin-right: 10rem;
+    margin-right: 11.5rem;
+    margin-bottom: 0;
   }
 }
 
 .main-footer__social {
   margin-bottom: 4rem;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__copyright {
@@ -35,7 +42,8 @@
   line-height: 2.6rem;
 
   @media (min-width: $width-tablet) {
-    margin-left: 10rem;
+    margin-left: 11rem;
+    margin-bottom: 0;
   }
 }
 
