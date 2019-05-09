@@ -81,7 +81,6 @@
 }
 
 .advantages__tagline {
-  display: block;
   width: 26rem;
   margin-left: auto;
   margin-right: auto;
@@ -92,6 +91,7 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
+    display: block;
     width: 14.96rem;
     margin-bottom: 0;
 
