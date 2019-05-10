@@ -187,8 +187,7 @@
         width: 64.8rem;
         height: 0.1rem;
 
-        background-color: $color-border-cards;
-        background-color: red;
+        background: linear-gradient(to right, $color-border-cards, $color-border-cards 19.4%, transparent 19.4%, transparent 81%, $color-border-cards 81%, $color-border-cards 100%);
 
         content: "";
       }
