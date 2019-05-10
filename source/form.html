@@ -57,7 +57,7 @@
           </label>
         </fieldset>
         <fieldset class="feedback__fieldset">
-          <legend class="feedback__legend text text--uppercase text--bold">Контактная информация:</legend>
+          <legend class="feedback__legend feedback__legend--decorated text text--uppercase text--bold">Контактная информация:</legend>
           <p class="feedback__input-group feedback__input-group--tel">
             <label class="feedback__label feedback__label--contact text--uppercase text--color-accent" for="tel">Контактный телефон*:</label>
             <input class="feedback__input feedback__input--contact text text--bold" placeholder="Введите телефон" type="tel" id="tel">
@@ -77,18 +77,20 @@
           <label class="feedback__label feedback__label--radio text text--bold" for="nondecisive">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="feedback__fieldset">
-          <legend class="feedback__legend text text--uppercase text--bold">посещенные достопримечательности:</legend>
-          <input class="visually-hidden feedback__checkbox" type="checkbox" id="devils-bridge" name="sights" value="devils-bridge" checked>
-          <label class="feedback__label feedback__label--checkbox text text--bold" for="devils-bridge">Мост Дьявола</label>
-          <input class="visually-hidden feedback__checkbox" type="checkbox" id="bell-mountain" name="sights" value="bell-mountain" checked>
-          <label class="feedback__label feedback__label--checkbox text text--bold" for="bell-mountain">Гора-Колокол</label>
-          <input class="visually-hidden feedback__checkbox" type="checkbox" id="slide-park" name="sights" value="slide-park" checked>
-          <label class="feedback__label feedback__label--checkbox text text--bold" for="slide-park">Слайд-парк</label>
-          <input class="visually-hidden feedback__checkbox" type="checkbox" id="red-rock" name="sights" value="red-rock">
-          <label class="feedback__label feedback__label--checkbox text text--bold" for="red-rock">Красные скалы</label>
+          <legend class="feedback__legend feedback__legend--decorated text text--uppercase text--bold">посещенные достопримечательности:</legend>
+          <div class="feedback__checkbox-wrap">
+            <input class="visually-hidden feedback__checkbox" type="checkbox" id="devils-bridge" name="sights" value="devils-bridge" checked>
+            <label class="feedback__label feedback__label--checkbox text text--bold" for="devils-bridge">Мост Дьявола</label>
+            <input class="visually-hidden feedback__checkbox" type="checkbox" id="bell-mountain" name="sights" value="bell-mountain" checked>
+            <label class="feedback__label feedback__label--checkbox text text--bold" for="bell-mountain">Гора-Колокол</label>
+            <input class="visually-hidden feedback__checkbox" type="checkbox" id="slide-park" name="sights" value="slide-park" checked>
+            <label class="feedback__label feedback__label--checkbox text text--bold" for="slide-park">Слайд-парк</label>
+            <input class="visually-hidden feedback__checkbox" type="checkbox" id="red-rock" name="sights" value="red-rock">
+            <label class="feedback__label feedback__label--checkbox text text--bold" for="red-rock">Красные скалы</label>
+          </div>
         </fieldset>
         <fieldset class="feedback__fieldset">
-          <legend class="feedback__legend text text--uppercase text--bold">Опишите свои эмоции:</legend>
+          <legend class="feedback__legend feedback__legend--decorated text text--uppercase text--bold">Опишите свои эмоции:</legend>
           <label for="text-review" class="visually-hidden">Текстовое поле для отзыва</label>
           <textarea class="feedback__textarea text text--bold" name="text-review" id="text-review" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
