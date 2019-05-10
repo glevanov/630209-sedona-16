@@ -2,6 +2,10 @@
   padding-top: 4rem;
 
   background-color: $color-bg-default;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 7.6rem;
+  }
 }
 
 .feedback__form {
@@ -15,6 +19,7 @@
     flex-wrap: wrap;
     margin-left: 6rem;
     margin-right: 6rem;
+    width: 64.8rem;
   }
 
   @media (min-width: $width-desktop) {
@@ -32,8 +37,10 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: 44rem;
 
     font-size: 3rem;
   }
@@ -53,8 +60,10 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7.4rem;
+    width: 44rem;
   }
 
   @media (min-width: $width-desktop) {
@@ -74,11 +83,32 @@
 
   @media (min-width: $width-tablet) {
     width: 100%;
+    margin-bottom: 0;
   }
 
   &--half-width {
     @media (min-width: $width-tablet) {
       width: 50%;
+      margin-bottom: 7rem;
+    }
+  }
+
+  &--half-width:first-of-type {
+    position: relative;
+
+    @media (min-width: $width-tablet) {
+      &::before {
+        position: absolute;
+        top: -7.7rem;
+        left: -0.1rem;
+
+        width: 0.1rem;
+        height: 29.2rem;
+
+        background-color: $color-border-cards;
+
+        content: "";
+      }
     }
   }
 
@@ -101,7 +131,7 @@
   line-height: 2.6rem;
   text-align: center;
 
-  @media (max-width: $width-tablet) {
+  @media (max-width: 767px) {
     &::before {
       position: absolute;
       top: 0;
@@ -118,7 +148,25 @@
   }
 
   @media (min-width: $width-tablet) {
+    padding-top: 0;
+    margin-bottom: 5.5rem;
+
     font-size: 2.1rem;
+  }
+
+  &--overall {
+    @media (min-width: $width-tablet) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &--name {
+    @media (min-width: $width-tablet) {
+      margin-left: 5.7rem;
+      margin-right: 0;
+      letter-spacing: 0.05rem;
+    }
   }
 }
 
@@ -182,23 +230,6 @@
   font-size: 1.4rem;
   line-height: 2.6rem;
 
-  &::before {
-    position: absolute;
-    left: -7.7rem;
-    top: -1.5rem;
-
-    width: 5.5rem;
-    height: 5.5rem;
-
-    display: block;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $color-bg-cards;
-
-    content: "";
-  }
-
   &--radio,
   &--checkbox {
     position: relative;
@@ -227,10 +258,33 @@
 
     &:last-of-type {
       margin-bottom: 3.7rem;
+
+      @media (min-width: $width-tablet) {
+        margin-bottom: 1.7rem;
+      }
     }
 
     &::before {
+      position: absolute;
+      left: -7.7rem;
+      top: -1.5rem;
+
+      width: 5.5rem;
+      height: 5.5rem;
+
+      display: block;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $color-bg-cards;
       border-radius: 50%;
+
+      content: "";
+    }
+
+    @media (min-width: $width-tablet) {
+      margin-top: 1.7rem;
+      margin-bottom: 3.5rem;
     }
   }
 
@@ -243,13 +297,38 @@
     }
 
     &::before {
+      position: absolute;
+      left: -7.7rem;
+      top: -1.5rem;
+
+      width: 5.5rem;
+      height: 5.5rem;
+
+      display: block;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $color-bg-cards;
       border-radius: 5px;
+
+      content: "";
     }
   }
 
   &--name {
     display: flex;
     align-items: center;
+
+    @media (min-width: $width-tablet) {
+      padding-left: 5.7rem;
+      box-sizing: border-box;
+    }
+
+    &:last-of-type {
+      @media (min-width: $width-tablet) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &--contact {
@@ -267,11 +346,19 @@
   &--first-name {
     width: 23rem;
     margin-left: auto;
+
+    @media (min-width: $width-tablet) {
+      width: 21.6rem;
+    }
   }
 
   &--other-name {
     width: 19.4rem;
     margin-left: auto;
+
+    @media (min-width: $width-tablet) {
+      width: 17.8rem;
+    }
   }
 
   &--contact {
