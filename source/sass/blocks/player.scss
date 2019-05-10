@@ -20,13 +20,11 @@
 
   line-height: 0;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 
   @media (min-width: $width-tablet) {
     width: 64.8rem;
     margin-top: -9.3rem;
-
-    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -172,8 +170,12 @@
   }
 
   &--fullscreen {
-    width: 5rem;
+    width: 6.3rem;
     order: 3;
+
+    @media (min-width: $width-tablet) {
+      width: 5rem;
+    }
   }
 
   @media (min-width: $width-tablet) {
