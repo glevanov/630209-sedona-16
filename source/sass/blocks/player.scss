@@ -21,11 +21,30 @@
   line-height: 0;
 
   background-color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $width-tablet) {
+    width: 64.8rem;
+    margin-top: -9.3rem;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .player__seek {
   display: block;
   width: 100%;
+
+  @media (min-width: $width-tablet) {
+    height: 9.3rem;
+    width: 38.9rem;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
 }
 
 .player__scale {
@@ -97,6 +116,10 @@
 
     background-color: rgba(255, 255, 255, 0.2);
   }
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+  }
 }
 
 .player__button {
@@ -132,22 +155,43 @@
 
   &--rewind {
     width: 6.6rem;
+
+    @media (min-width: $width-tablet) {
+      width: 8.6rem;
+    }
   }
 
   &--captions {
     width: 5.2rem;
+
+    @media (min-width: $width-tablet) {
+      width: 6.3rem;
+      margin-left: 2rem;
+      order: 2;
+    }
   }
 
   &--fullscreen {
-    width: 6.3rem;
+    width: 5rem;
+    order: 3;
   }
 
   @media (min-width: $width-tablet) {
+    height: 9.3rem;
+
     color: $color-button-desktop-default;
+    background-color: transparent;
   }
 }
 
 .player__button-wrap {
   width: calc(100% - 5.2rem - 6.3rem);
   background-color: $color-bg-cards;
+
+  @media (min-width: $width-tablet) {
+    width: unset;
+    order: 0;
+
+    background-color: transparent;
+  }
 }
