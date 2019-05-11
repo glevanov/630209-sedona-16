@@ -8,6 +8,11 @@
   @media (min-width: $width-tablet) {
     padding-top: 6.8rem;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 7.2rem;
+    padding-bottom: 8.6rem;
+  }
 }
 
 .video__tagline {
@@ -39,6 +44,11 @@
   @media (min-width: $width-tablet) {
     width: 41.5rem;
     margin-bottom: 7.3rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 41.5rem;
+    margin-bottom: 7.1rem;
   }
 }
 

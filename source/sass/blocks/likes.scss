@@ -13,10 +13,15 @@
   width: 2.3rem;
   height: 2.1rem;
 
-  background-image: url("../../img/icon-like.svg");
-  background-repeat: no-repeat;
+  color: $color-text-default;
 
   opacity: 0.3;
+
+  @media (min-width: $width-desktop) {
+    opacity: 1;
+
+    color: $color-text-contrast;
+  }
 }
 
 .likes__count {
@@ -27,5 +32,9 @@
 
   @media (min-width: $width-tablet) {
     margin-left: 1rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    color: $color-text-contrast;
   }
 }

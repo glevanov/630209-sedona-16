@@ -26,6 +26,10 @@
     width: 64.8rem;
     margin-top: -9.3rem;
   }
+
+  @media (min-width: $width-tablet) {
+    width: 80rem;
+  }
 }
 
 .player__seek {
@@ -42,6 +46,10 @@
 
     margin-left: 0.7rem;
     margin-right: 0.7rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 54rem;
   }
 }
 

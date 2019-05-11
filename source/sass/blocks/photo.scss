@@ -6,6 +6,10 @@
   @media (min-width: $width-tablet) {
     padding-top: 7.6rem;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 11.3rem;
+  }
 }
 
 .photo__heading {
@@ -67,12 +71,17 @@
 
   @media (min-width: $width-desktop) {
     width: 120rem;
+    padding-top: 4.8rem;
   }
 }
 
 .photo__feed-item {
   @media (min-width: $width-tablet) {
     width: 32.4rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 40rem;
   }
 
   &--first {
