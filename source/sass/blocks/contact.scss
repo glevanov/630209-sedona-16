@@ -9,6 +9,10 @@
     padding-top: 5.7rem;
     padding-bottom: 5.8rem;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 6.6rem;
+  }
 }
 
 .contact__tagline {
@@ -40,6 +44,10 @@
   @media (min-width: $width-tablet) {
     width: 45rem;
     margin-bottom: 4.1rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 4.5rem;
   }
 }
 

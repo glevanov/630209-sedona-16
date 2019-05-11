@@ -98,10 +98,6 @@
     font-size: 2.1rem;
   }
 
-  @media (min-width: $width-desktop) {
-    width: 120rem;
-  }
-
   &--main {
     @media (min-width: $width-tablet) {
       width: 49rem;
@@ -111,7 +107,7 @@
     }
 
     @media (min-width: $width-desktop) {
-      width: 120rem;
+      width: 49rem;
     }
   }
 }
@@ -132,7 +128,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 120rem;
+    width: 49rem;
+    margin-bottom: 4.9rem;
   }
 }
 
@@ -154,6 +151,7 @@
 
   @media (min-width: $width-desktop) {
     width: 40rem;
+    padding-bottom: 8.2rem;
   }
 
   &:last-of-type {
@@ -161,6 +159,28 @@
 
     @media (min-width: $width-tablet) {
       padding-bottom: 6.2rem;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-bottom: 8.2rem;
+    }
+  }
+
+  &--house {
+    @media (min-width: $width-tablet) {
+      order: 2;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $width-tablet) {
+      order: 4;
+    }
+  }
+
+  &--burger {
+    @media (min-width: $width-tablet) {
+      order: 3;
     }
   }
 }
@@ -277,6 +297,22 @@
     margin: 0;
     width: 16.5rem;
   }
+
+  @media (min-width: $width-desktop) {
+    width: 28.3rem;
+  }
+
+  &--narrow {
+    @media (min-width: $width-desktop) {
+      width: 21.4rem;
+    }
+  }
+}
+
+.advantages__text-break {
+  @media (min-width: $width-desktop) {
+    display: block;
+  }
 }
 
 .advantages__keynote {
@@ -308,6 +344,13 @@
     @media (min-width: $width-tablet) {
       padding-top: 4.5rem;
     }
+
+
+    @media (min-width: $width-desktop) {
+      padding-top: 5.3rem;
+      padding-left: 5.5rem;
+      padding-right: 5.5rem;
+    }
   }
 
   &--accent {
@@ -320,6 +363,10 @@
     @media (min-width: $width-tablet) {
       padding: 4.5rem 4rem 4.3rem;
     }
+
+    @media (min-width: $width-desktop) {
+      padding-bottom: 6.6rem;
+    }
   }
 
   &--thin {
@@ -328,6 +375,41 @@
       padding-right: 5.35rem;
     }
   }
+
+  &--first {
+    @media (min-width: $width-tablet) {
+      order: 0;
+    }
+  }
+
+  &--second {
+    @media (min-width: $width-tablet) {
+      order: 1;
+    }
+
+
+    @media (min-width: $width-desktop) {
+      padding-left: 7.5rem;
+      padding-right: 7.5rem;
+    }
+  }
+}
+
+.advantages__picture {
+  display: block;
+
+  &--city {
+    @media (min-width: $width-tablet) {
+      order: 1;
+    }
+  }
+
+  &--bridge {
+    @media (min-width: $width-tablet) {
+      order: 0;
+    }
+  }
+
 }
 
 .advantages__number {

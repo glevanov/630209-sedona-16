@@ -129,7 +129,7 @@
     padding: 1.5rem 0;
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-desktop) {
     width: 23.9rem;
   }
 }
@@ -147,6 +147,10 @@
 
     height: unset;
     order: unset;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: calc(50% - 18.8rem / 2);
   }
 }
 
