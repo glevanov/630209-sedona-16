@@ -31,11 +31,16 @@
     margin-right: auto;
     margin-left: auto;
     flex-direction: row;
+    flex-wrap: wrap;
     order: unset;
 
     color: $color-text-default;
 
     background-color: transparent;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
   }
 }
 
@@ -61,6 +66,12 @@
 
     &:nth-child(2) {
       margin-right: 15.6rem;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &:nth-child(2) {
+      margin-right: 24.4rem;
     }
   }
 }
@@ -116,6 +127,10 @@
   @media (min-width: $width-tablet) {
     width: 15.3rem;
     padding: 1.5rem 0;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 23.9rem;
   }
 }
 
