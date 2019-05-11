@@ -30,11 +30,19 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
+    width: 41.5rem;
+    margin-top: 6.4rem;
+    margin-bottom: 2.9rem;
+
     font-size: 3rem;
   }
 
   &--error {
     @media (min-width: $width-tablet) {
+      width: 25rem;
+      margin-top: 5.6rem;
+      margin-bottom: 2.3rem;
+
       line-height: 4rem;
     }
   }
@@ -50,8 +58,17 @@
   line-height: 2.4rem;
   text-align: center;
 
+  @media (min-width: $width-tablet) {
+    width: 41.5rem;
+  }
+
   &--error {
     margin-bottom: 2rem;
+
+    @media (min-width: $width-tablet) {
+      width: 27.7rem;
+      margin-bottom: 3.2rem;
+    }
   }
 }
 
@@ -63,10 +80,19 @@
   padding: 2rem 0;
 
   background-color: $color-bg-cards;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 4.4rem;
+    padding-bottom: 4.4rem;
+  }
 }
 
 .modal__submit {
   width: 28rem;
+
+  @media (min-width: $width-tablet) {
+    width: 45.8rem;
+  }
 
   &--smaller {
     font-size: 1.8rem;
@@ -75,5 +101,10 @@
   &--error {
     width: 18rem;
     margin-bottom: 3.5rem;
+
+    @media (min-width: $width-tablet) {
+      width: 27.2rem;
+      margin-bottom: 5rem;
+    }
   }
 }
