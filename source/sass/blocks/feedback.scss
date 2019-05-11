@@ -7,7 +7,7 @@
     padding-top: 7.6rem;
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-desktop) {
     padding-top: 11.3rem;
   }
 }
@@ -269,7 +269,10 @@
 
   &--tel {
     position: relative;
-    width: 40.1rem;
+
+    @media (min-width: $width-desktop) {
+      width: 40.1rem;
+    }
   }
 
   &--tel::after {
@@ -291,7 +294,10 @@
 
   &--email {
     position: relative;
-    width: 48.1rem;
+
+    @media (min-width: $width-desktop) {
+      width: 48.1rem;
+    }
   }
 
   &--email::after {
