@@ -6,6 +6,10 @@
   @media (min-width: $width-tablet) {
     padding-top: 7.6rem;
   }
+
+  @media (min-width: $width-tablet) {
+    padding-top: 11.3rem;
+  }
 }
 
 .feedback__form {
@@ -23,8 +27,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96rem;
   }
 }
 
@@ -44,11 +49,6 @@
 
     font-size: 3rem;
   }
-
-  @media (min-width: $width-desktop) {
-    margin-left: 12rem;
-    margin-right: 12rem;
-  }
 }
 
 .feedback__text {
@@ -67,8 +67,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-bottom: 5.9rem;
   }
 }
 
@@ -90,6 +89,10 @@
     @media (min-width: $width-tablet) {
       width: 50%;
       margin-bottom: 7rem;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 6.7rem;
     }
   }
 
@@ -116,6 +119,11 @@
   &--order-first {
     @media (min-width: $width-tablet) {
       order: -1;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 0.3rem;
+      box-sizing: border-box;
     }
   }
 }
@@ -164,6 +172,10 @@
       margin-right: 0;
       text-align: left;
     }
+
+    @media (min-width: $width-desktop) {
+      margin-left: 7.7rem;
+    }
   }
 
   &--name {
@@ -172,6 +184,11 @@
       margin-right: 0;
       letter-spacing: 0.05rem;
       text-align: left;
+    }
+
+    @media (min-width: $width-tablet) {
+      margin-left: 7.8rem;
+      margin-bottom: 5.6rem;
     }
   }
 
@@ -190,6 +207,18 @@
         height: 0.1rem;
 
         background: linear-gradient(to right, $color-border-cards, $color-border-cards 19.4%, transparent 19.4%, transparent 81%, $color-border-cards 81%, $color-border-cards 100%);
+
+        content: "";
+      }
+    }
+
+    @media (min-width: $width-tablet) {
+      &::before {
+        left: -34rem;
+
+        width: 96rem;
+
+        background: linear-gradient(to right, $color-border-cards, $color-border-cards 29%, transparent 29%, transparent 71%, $color-border-cards 71%, $color-border-cards 100%);
 
         content: "";
       }
@@ -379,6 +408,10 @@
       box-sizing: border-box;
     }
 
+    @media (min-width: $width-desktop) {
+      padding-left: 7.9rem;
+    }
+
     &:last-of-type {
       @media (min-width: $width-tablet) {
         margin-bottom: 0;
@@ -405,6 +438,10 @@
     @media (min-width: $width-tablet) {
       width: 21.6rem;
     }
+
+    @media (min-width: $width-desktop) {
+      width: 35rem;
+    }
   }
 
   &--other-name {
@@ -413,6 +450,10 @@
 
     @media (min-width: $width-tablet) {
       width: 17.8rem;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 31.2rem;
     }
   }
 
