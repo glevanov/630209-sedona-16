@@ -148,7 +148,7 @@
   line-height: 2.6rem;
   text-align: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: $width-pre-tablet) {
     &::before {
       position: absolute;
       top: 0;

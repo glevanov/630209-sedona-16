@@ -36,7 +36,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $width-pre-tablet) {
     &::before,
     &::after {
       position: absolute;
