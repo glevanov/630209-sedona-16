@@ -21,14 +21,12 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: auto;
+    margin-right: auto;
     width: 64.8rem;
   }
 
   @media (min-width: $width-desktop) {
-    margin-left: auto;
-    margin-right: auto;
     width: 96rem;
   }
 }

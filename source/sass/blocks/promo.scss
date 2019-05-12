@@ -8,6 +8,8 @@
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: 100%, cover;
+  background-color: #364755;
 
   @media (min-width: $width-tablet) {
     padding-top: 9.4rem;
