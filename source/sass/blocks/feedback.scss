@@ -244,6 +244,8 @@
   margin: 0;
   margin-bottom: 1.3rem;
 
+  font-size: 0;
+
 
   @media (min-width: $width-tablet) {
     margin-bottom: 2.4rem;
@@ -499,6 +501,7 @@
 
 .feedback__input {
   padding: 1.2rem 1.7rem;
+  min-height: 5.8rem;
 
   &--first-name {
     width: 23rem;
