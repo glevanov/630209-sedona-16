@@ -4,11 +4,32 @@ $color-text-contrast: #ffffff;
 $color-bg-default: #ffffff;
 $color-bg-accent: #efefef;
 $color-bg-cards: #f2f2f2;
+$color-bg-cards-accent: #eaeaea;
 $color-primary: #81b3d2;
+$color-primary-hover: #669ec0;
+$color-primary-down: #5496bd;
 $color-border: #e6e6e6;
+$color-border-cards: #d2d2d2;
+$color-disabled: #e5e5e5;
+$color-active: #d5d5d5;
+$color-button-default: #5c6870;
+$color-button-active: $color-text-accent;
+$color-button-down: rgba(51, 51, 51, 0.3);
+$color-button-desktop-default: #ffffff;
+$color-button-desktop-hover: rgba(255, 255, 255, 0.6);
+$color-button-desktop-active: rgba(255, 255, 255, 0.3);
+$color-nav-hover: $color-primary;
+$color-nav-active: rgba(0, 0, 0, 0.3);
+$color-nav-focus: #766357;
+$color-nav-focus-hover: #604e43;
+$color-nav-focus-active: rgba(118, 99, 87, 0.3);
 
 $font-default: "PT Sans", "Arial", sans-serif;
 
 $width-mobile: 320px;
+$width-pre-tablet: 767px;
 $width-tablet: 768px;
 $width-desktop: 1200px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

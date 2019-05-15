@@ -2,9 +2,39 @@
   display: flex;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $width-tablet) {
+    width: 6.4rem;
+  }
+}
+
+.likes__like {
+  display: block;
+  width: 2.3rem;
+  height: 2.1rem;
+
+  color: $color-text-default;
+
+  opacity: 0.3;
+
+  @media (min-width: $width-desktop) {
+    opacity: 1;
+
+    color: $color-text-contrast;
+  }
 }
 
 .likes__count {
+  margin-left: 1.3rem;
+
   font-size: 1.4rem;
   line-height: 2.4rem;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 1rem;
+  }
+
+  @media (min-width: $width-desktop) {
+    color: $color-text-contrast;
+  }
 }

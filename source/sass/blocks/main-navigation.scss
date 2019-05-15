@@ -11,6 +11,8 @@
   @media (min-width: $width-tablet) {
     display: block;
     flex-direction: unset;
+
+    font-size: 1.4rem;
   }
 }
 
@@ -20,16 +22,25 @@
   flex-direction: column;
   order: 0;
 
+  color: $color-text-contrast;
+
   background-color: $color-primary;
 
   @media (min-width: $width-tablet) {
+    width: 76.8rem;
+    margin-right: auto;
+    margin-left: auto;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     order: unset;
 
     color: $color-text-default;
 
     background-color: transparent;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 120rem;
   }
 }
 
@@ -40,10 +51,6 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
-  @media (min-width: $width-tablet) {
-    border: none;
-  }
-
   &:first-of-type {
     border-top: none;
   }
@@ -51,26 +58,99 @@
   &:last-of-type {
     border-bottom: none;
   }
+
+  @media (min-width: $width-tablet) {
+    line-height: 2.6rem;
+
+    border: none;
+
+    &:nth-child(2) {
+      margin-right: 15.6rem;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &:nth-child(2) {
+      margin-right: 24.4rem;
+    }
+  }
 }
 
 .main-navigation__link {
   display: block;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0.7rem 0;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-hover;
+
+    @media (min-width: $width-tablet) {
+      background-color: transparent;
+    }
+  }
+
+  &:hover {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-hover;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-focus;
+    }
+  }
+
+  &:active {
+    background-color: $color-primary-down;
+    color: rgba(255, 255, 255, 0.3);
+
+    @media (min-width: $width-tablet) {
+      background-color: transparent;
+      color: $color-nav-active;
+    }
+  }
+
+  &:active:focus {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-focus-active;
+    }
+  }
+
+  &:hover:focus {
+    @media (min-width: $width-tablet) {
+      color: $color-nav-focus-hover;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 15.3rem;
+    padding: 1.5rem 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 23.9rem;
+  }
 }
 
 .main-navigation__logo {
+  margin-left: calc(50% - 10.2rem / 2);
+  height: 5.7rem;
   order: 1;
 
   @media (min-width: $width-tablet) {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: calc(50% - 10.2rem / 2);
 
+    height: unset;
     order: unset;
+    margin-left: auto;
+  }
 
-    transform: translateX(-50%);
+  @media (min-width: $width-desktop) {
+    left: calc(50% - 18.8rem / 2);
   }
 }
 

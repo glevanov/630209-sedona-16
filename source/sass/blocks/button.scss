@@ -3,7 +3,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding: 1.6rem;
   box-sizing: border-box;
 
   font-size: 2.1rem;
@@ -16,4 +16,19 @@
   border: none;
 
   background-color: $color-primary;
+
+  &:focus,
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+
+  &:active {
+    background-color: $color-primary-down;
+
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
 }
