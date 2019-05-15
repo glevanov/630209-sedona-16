@@ -64,20 +64,22 @@
   }
 
   &--separator {
-    position: relative;
+    @media (max-width: $width-pre-tablet) {
+      position: relative;
 
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: calc(50% - 14rem);
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 14rem);
 
-      display: block;
-      width: 28rem;
-      height: 0.1rem;
+        display: block;
+        width: 28rem;
+        height: 0.1rem;
 
-      background-color: #d7d7d7;
+        background-color: #d7d7d7;
 
-      content: "";
+        content: "";
+      }
     }
   }
 }
@@ -94,7 +96,7 @@
 
   @media (min-width: $width-tablet) {
     display: block;
-    width: 14.96rem;
+    width: 16rem;
     margin-bottom: 0;
 
     font-size: 2.1rem;
