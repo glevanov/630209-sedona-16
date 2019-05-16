@@ -7,6 +7,11 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="page">
+<svg style="display: none;">
+  <symbol id="academy-logo">
+    <path fill="currentColor" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path>
+  </symbol>
+</svg>
   <div class="wrapper">
     <header class="main-header page__main-header">
       <nav class="main-navigation">
@@ -50,8 +55,11 @@
               седона не аттракцион для туристов, там течет своя жизнь
             </p>
             <picture>
+              <source srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x" media="(min-width: 1200px)">
               <source srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x" media="(min-width: 768px)">
               <source srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
               <img class="advantages__picture advantages__picture--city reset-picture" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фотография кафе">
             </picture>
             <p class="advantages__detail advantages__detail--house">
@@ -74,8 +82,11 @@
               Да, по нему можно пройти! Если&nbsp;вы осмелитесь, конечно
             </p>
             <picture>
+              <source srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x" media="(min-width: 1200px)">
               <source srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x" media="(min-width: 768px)">
               <source srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
               <img class="advantages__picture advantages__picture--bridge reset-picture" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фотография пропасти">
             </picture>
           </li>
@@ -112,8 +123,11 @@
         <h2 class="visually-hidden">Карта</h2>
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d596838.7233356761!2d-111.96232840084673!3d34.88251943425948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1555346333226!5m2!1sru!2sru"></iframe>
         <picture>
+          <source srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x" media="(min-width: 1200px)">
           <source srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x" media="(min-width: 768px)">
           <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <source srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <img class="map__placeholder reset-picture" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Адрес: Седона, Аризона 86336, США">
         </picture>
       </section>
@@ -140,7 +154,7 @@
       <p class="main-footer__copyright text text--uppercase">
         Разработано
         <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path fill="currentColor" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path></svg>
+          <svg width="26.943" height="34.09"><use xlink:href="#academy-logo"></use></svg>
         </a>
       </p>
     </footer>
