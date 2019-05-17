@@ -42,6 +42,12 @@
   @media (min-width: $width-desktop) {
     width: 120rem;
   }
+
+  &--collapsed {
+    @media (max-width: $width-pre-tablet) {
+      display: none;
+    }
+  }
 }
 
 .main-navigation__item {
