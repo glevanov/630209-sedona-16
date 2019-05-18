@@ -81,16 +81,17 @@
   @media (min-width: $width-tablet) {
     width: 100%;
     margin-bottom: 0;
+    align-items: flex-start;
   }
 
   &--half-width {
     @media (min-width: $width-tablet) {
       width: 50%;
-      margin-bottom: 7rem;
+      margin-bottom: 5.5rem;
     }
 
     @media (min-width: $width-desktop) {
-      margin-bottom: 6.7rem;
+      margin-bottom: 5.3rem;
     }
   }
 
@@ -100,7 +101,7 @@
     @media (min-width: $width-tablet) {
       &::before {
         position: absolute;
-        top: -7.7rem;
+        top: 0.4rem;
         left: -0.1rem;
 
         display: block;
@@ -241,8 +242,7 @@
 .feedback__input-group {
   display: block;
   width: 100%;
-  margin: 0;
-  margin-bottom: 1.3rem;
+  margin: 0 0 1.3rem;
 
   font-size: 0;
 
@@ -252,11 +252,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0;
     display: flex;
     align-items: center;
-    margin-top: 5.2rem;
-    margin-bottom: 5.2rem;
+    margin: 5.2rem 0;
   }
 
   &:last-of-type {
@@ -322,16 +320,19 @@
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: 52rem;
-    padding-left: 5.7rem;
-    margin-top: 2.4rem;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1.9rem;
+    padding-left: 9.6rem;
+    padding-bottom: 4rem;
+    box-sizing: border-box;
   }
 
   @media (min-width: $width-desktop) {
     width: 96rem;
     padding-left: 0;
     margin-top: 1.9rem;
-    margin-bottom: 6.7rem;
+    margin-bottom: 2.7rem;
     justify-content: space-between;
   }
 }
@@ -348,7 +349,10 @@
   &--checkbox {
     position: relative;
 
-    margin-left: 15.5rem;
+    display: flex;
+    align-items: center;
+    width: 28rem;
+    box-sizing: border-box;
 
     font-size: 1.8rem;
 
@@ -364,14 +368,30 @@
     &:disabled::before {
       background-color: $color-disabled;
     }
+
+    &::before {
+      position: relative;
+
+      width: 5.5rem;
+      height: 5.5rem;
+      margin-right: 2.3rem;
+      display: block;
+      box-sizing: border-box;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $color-bg-cards;
+
+      content: "";
+    }
   }
 
   &--radio {
-    margin-top: 2rem;
-    margin-bottom: 2.2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1.4rem;
 
     &:last-of-type {
-      margin-bottom: 3.7rem;
+      margin-bottom: 2.5rem;
 
       @media (min-width: $width-tablet) {
         margin-bottom: 1.7rem;
@@ -379,38 +399,31 @@
     }
 
     &::before {
-      position: absolute;
-      left: -7.7rem;
-      top: -1.5rem;
-
-      width: 5.5rem;
-      height: 5.5rem;
-      display: block;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: $color-bg-cards;
       border-radius: 50%;
-
-      content: "";
     }
 
     @media (min-width: $width-tablet) {
-      margin-top: 1.7rem;
-      margin-bottom: 3.5rem;
+      margin-top: 0.3rem;
+      margin-bottom: 2.3rem;
     }
   }
 
   &--checkbox {
-    margin-top: 1.1rem;
-    margin-bottom: 5.3rem;
+    margin-bottom: 2.5rem;
     margin-left: 0;
 
+    &:first-of-type {
+      margin-top: -0.8rem;
+
+      @media (min-width: $width-tablet) {
+        margin-top: 0;
+      }
+    }
+
     @media (min-width: $width-tablet) {
-      box-sizing: border-box;
-      width: 18rem;
-      margin-left: 8rem;
-      margin-bottom: 5rem;
+      width: 25rem;
+      margin-right: 0.9rem;
+      margin-bottom: 3.2rem;
     }
 
     @media (min-width: $width-desktop) {
@@ -421,40 +434,19 @@
     }
 
     &:last-of-type {
-      margin-bottom: 3.5rem;
+      margin-bottom: 2rem;
 
       @media (min-width: $width-tablet) {
-        margin-bottom: 8.4rem;
+        margin-bottom: 0;
       }
 
       @media (min-width: $width-desktop) {
-        margin-bottom: 0;
         margin-right: 0.3rem;
       }
     }
 
     &::before {
-      position: absolute;
-      left: -8rem;
-      top: -1.5rem;
-
-      width: 5.5rem;
-      height: 5.5rem;
-      display: block;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: $color-bg-cards;
       border-radius: 5px;
-
-      content: "";
-
-      @media (min-width: $width-desktop) {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-right: 2.5rem;
-      }
     }
   }
 
