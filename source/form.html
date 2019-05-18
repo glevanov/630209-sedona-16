@@ -59,8 +59,8 @@
             <input type="text" class="feedback__input feedback__input--other-name text text--bold" placeholder="Александрович">
           </label>
         </fieldset>
-        <fieldset class="feedback__fieldset feedback__fieldset--contacts">
-          <legend class="feedback__legend feedback__legend--decorated text text--uppercase text--bold">Контактная информация:</legend>
+        <div class="feedback__fieldset feedback__fieldset--contacts">
+          <p class="feedback__legend feedback__legend--decorated text text--uppercase text--bold">Контактная информация:</p>
           <p class="feedback__input-group feedback__input-group--tel">
             <label class="feedback__label feedback__label--contact text--uppercase text--color-accent" for="tel"><span class="feedback__label-veil">Контактный </span>телефон*:</label>
             <input class="feedback__input feedback__input--contact text text--bold" placeholder="Введите телефон" type="tel" id="tel">
@@ -69,7 +69,7 @@
             <label class="feedback__label feedback__label--contact text--uppercase text--color-accent" for="email">Электронная&nbsp;почта*:</label>
             <input class="feedback__input feedback__input--contact text text--bold" placeholder="Введите e-mail" type="email" id="email">
           </p>
-        </fieldset>
+        </div>
         <fieldset class="feedback__fieldset feedback__fieldset--half-width feedback__fieldset--order-first">
           <legend class="feedback__legend feedback__legend--overall text text--uppercase text--bold">ВАше Общее впечатление:</legend>
           <input class="visually-hidden feedback__radio" type="radio" id="positive" name="impression" value="positive" checked>
