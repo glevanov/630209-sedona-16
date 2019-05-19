@@ -60,15 +60,20 @@
 
   line-height: 0;
   color: $color-text-default;
+}
 
-  &:hover,
-  &:focus {
-    color: $color-primary;
-  }
+.main-footer__link {
+  display: flex;
+  align-items: center;
+}
 
-  &:active {
-    color: $color-text-default;
+.main-footer__link:hover .main-footer__logo,
+.main-footer__link:focus .main-footer__logo {
+  color: $color-primary;
+}
 
-    opacity: 0.3;
-  }
+.main-footer__link:active .main-footer__logo {
+  color: $color-text-default;
+
+  opacity: 0.3;
 }

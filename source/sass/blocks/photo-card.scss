@@ -60,9 +60,33 @@
   }
 }
 
+.photo-card__description {
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    bottom: 0;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.7rem;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .photo-card__heading {
   font-size: 1.4rem;
   line-height: 2.4rem;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 2rem;
+  }
 
   @media (min-width: $width-desktop) {
     color: $color-text-contrast;
@@ -70,8 +94,6 @@
 }
 
 .photo-card__link {
-  position: relative;
-
   display: block;
   width: 100%;
   margin-bottom: 1.5rem;
@@ -96,51 +118,16 @@
       max-width: 120rem;
     }
   }
-
-  @media (min-width: $width-desktop) {
-    &::before {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-      display: block;
-      width: 100%;
-      height: 8rem;
-
-      background-color: $color-text-default;
-
-      content: "";
-      opacity: 0.3;
-    }
-  }
-}
-
-.photo-card__text-wrap {
-  display: block;
-
-  @media (min-width: $width-tablet) {
-    width: 19.9rem;
-    margin-left: 2rem;
-  }
-
-  @media (min-width: $width-desktop) {
-    position: absolute;
-    bottom: 1.7rem;
-    left: 2.2rem;
-
-    margin: 0;
-  }
-
-  &--first {
-    @media (min-width: $width-tablet) {
-      width: 52.4rem;
-    }
-  }
 }
 
 .photo-card__text {
   font-size: 1.4rem;
   line-height: 2.4rem;
+
+  @media (min-width: $width-tablet) {
+    box-sizing: border-box;
+    margin-left: 2rem;
+  }
 
   @media (min-width: $width-desktop) {
     color: $color-text-contrast;
@@ -151,14 +138,10 @@
   margin-top: 0.8rem;
 
   @media (min-width: $width-tablet) {
-    margin: 1.3rem 2rem 0 auto;
+    margin: -1rem 2rem 0 auto;
+    box-sizing: border-box;
   }
 
   @media (min-width: $width-desktop) {
-    position: absolute;
-    bottom: 2.7rem;
-    right: 2.2rem;
-
-    margin: 0;
   }
 }

@@ -5,6 +5,10 @@
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
 </head>
 <body class="page">
 <div style="display: none;">
@@ -57,16 +61,16 @@
                 <img class="reset-picture" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
               </picture>
             </a>
-            <div class="photo-card__text-wrap photo-card__text-wrap--first">
+            <div class="photo-card__description">
               <p class="photo-card__heading text text--bold text--uppercase">неродные просторы</p>
               <p class="photo-card__text text text--color-accent">Автор фото: Борис</p>
+              <p class="likes photo-card__likes">
+                <a class="likes__like" href="?like=yyc5rde" aria-label="Лайк">
+                  <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+                </a>
+                <span class="likes__count text text--bold">1350</span>
+              </p>
             </div>
-            <p class="likes photo-card__likes">
-              <a class="likes__like" href="?like=yyc5rde" aria-label="Лайк">
-                <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
-              </a>
-              <span class="likes__count text text--bold">1350</span>
-            </p>
           </article>
         </li>
         <li class="photo__feed-item">
@@ -81,16 +85,16 @@
                 <img class="reset-picture" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
               </picture>
             </a>
-            <div class="photo-card__text-wrap">
+            <div class="photo-card__description">
               <p class="photo-card__heading text text--bold text--uppercase">Местная растительность</p>
               <p class="photo-card__text text text--color-accent">Автор фото: Сергей</p>
+              <p class="likes photo-card__likes">
+                <a class="likes__like" href="?like=ak32tm1" aria-label="Лайк">
+                  <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+                </a>
+                <span class="likes__count text text--bold">143</span>
+              </p>
             </div>
-            <p class="likes photo-card__likes">
-              <a class="likes__like" href="?like=ak32tm1" aria-label="Лайк">
-                <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
-              </a>
-              <span class="likes__count text text--bold">143</span>
-            </p>
           </article>
         </li>
         <li class="photo__feed-item">
@@ -105,16 +109,16 @@
                 <img class="reset-picture" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
               </picture>
             </a>
-            <div class="photo-card__text-wrap">
+            <div class="photo-card__description">
               <p class="photo-card__heading text text--bold text--uppercase">Дорога на север</p>
               <p class="photo-card__text text text--color-accent">Автор фото: Петр</p>
+              <p class="likes photo-card__likes">
+                <a class="likes__like" href="?like=ka7gth3" aria-label="Лайк">
+                  <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+                </a>
+                <span class="likes__count text text--bold">96</span>
+              </p>
             </div>
-            <p class="likes photo-card__likes">
-              <a class="likes__like" href="?like=ka7gth3" aria-label="Лайк">
-                <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
-              </a>
-              <span class="likes__count text text--bold">96</span>
-            </p>
           </article>
         </li>
         <li class="photo__feed-item">
@@ -129,16 +133,16 @@
                 <img class="reset-picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
               </picture>
             </a>
-            <div class="photo-card__text-wrap">
+            <div class="photo-card__description">
               <p class="photo-card__heading text text--bold text--uppercase">Мост дьявола</p>
               <p class="photo-card__text text text--color-accent">Автор фото: Антон</p>
+              <p class="likes photo-card__likes">
+                <a class="likes__like" href="?like=ep2yay8" aria-label="Лайк">
+                  <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
+                </a>
+                <span class="likes__count text text--bold">254</span>
+              </p>
             </div>
-            <p class="likes photo-card__likes">
-              <a class="likes__like" href="?like=ep2yay8" aria-label="Лайк">
-                <svg width="22" height="20"><use xlink:href="#icon-like"></use></svg>
-              </a>
-              <span class="likes__count text text--bold">254</span>
-            </p>
           </article>
         </li>
       </ul>
@@ -185,25 +189,25 @@
     <p class="main-footer__tagline text text--uppercase text--bold">#visitSEDONA</p>
     <ul class="social main-footer__social reset-list">
       <li class="social__item">
-        <a href="https://twitter.com/" class="social__link">
+        <a href="https://twitter.com/" class="social__link" aria-label="Твиттер">
           <img class="social__logo" src="img/icon-twitter.svg" width="18" height="15" alt="Твиттер">
         </a>
       </li>
       <li class="social__item">
-        <a href="http://facebook.com/" class="social__link">
+        <a href="http://facebook.com/" class="social__link" aria-label="Фейсбук">
           <img class="social__logo" src="img/icon-facebook.svg" width="9" height="19" alt="Фейсбук">
         </a>
       </li>
       <li class="social__item">
-        <a href="https://www.youtube.com/" class="social__link">
+        <a href="https://www.youtube.com/" class="social__link" aria-label="Ютуб">
           <img class="social__logo" src="img/icon-youtube.svg" width="20" height="14" alt="Ютуб">
         </a>
       </li>
     </ul>
     <p class="main-footer__copyright text text--uppercase">
-      Разработано
-      <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="26.943" height="34.09"><use xlink:href="#icon-logo-htmlacademy"></use></svg>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__link reset-link">
+        Разработано
+        <svg class="main-footer__logo" width="26.943" height="34.09"><use xlink:href="#icon-logo-htmlacademy"></use></svg>
       </a>
     </p>
   </footer>
